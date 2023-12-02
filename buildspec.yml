@@ -18,7 +18,7 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Compiling the Node.js code
-#      - npm run build
+      - npm run build
       - mocha test.js
   post_build:
     commands:
@@ -33,8 +33,9 @@ phases:
 artifacts:
   files:
     - app.js
-    - index.html
+#    - index.html
     - package.json
+    - package-lock.json
     - node_modules/async/*
     - node_modules/lodash/*
     - node_modules/express/*

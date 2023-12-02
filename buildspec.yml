@@ -30,18 +30,18 @@ phases:
 # used only for building and testing.
 # ExpressJS apps will need other artifact directories included (bin/*, public/*, routes/*, views/* etc).
 
-artifacts:
-  files:
-    - 'app.js'
-    - 'index.html'
-    - 'package.json'
-    - 'package-lock.json'
-    - 'node_modules/async/*'
-    - 'node_modules/lodash/*'
-    - 'node_modules/express/*'
-  discard-paths: yes
-
 #artifacts:
 #  files:
-#    - '**/*'
-#   discard-paths: yes
+#    - 'app.js'
+#    - 'index.html'
+#    - 'package.json'
+#    - 'package-lock.json'
+#    - 'node_modules/async/*'
+#    - 'node_modules/lodash/*'
+#    - 'node_modules/express/*'
+#  discard-paths: yes
+
+artifacts:
+  files:
+    - '**/*'
+  discard-paths: yes

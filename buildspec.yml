@@ -33,7 +33,7 @@ phases:
 artifacts:
   files:
     - app.js
-#    - index.html
+    - index.html
     - package.json
     - package-lock.json
     - node_modules/async/*

@@ -37,8 +37,4 @@ artifacts:
     - node_modules/async/*
     - node_modules/lodash/*
 
-#artifacts:
-#  files:
-#    - '**/*'
- 
-# discard-paths: yes
+discard-paths: yes

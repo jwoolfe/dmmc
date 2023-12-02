@@ -18,7 +18,7 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Compiling the Node.js code
-      - npm run build
+#      - npm run build
       - mocha test.js
   post_build:
     commands:
@@ -39,9 +39,10 @@ artifacts:
     - node_modules/async/*
     - node_modules/lodash/*
     - node_modules/express/*
+  discard-paths: yes
 
 #artifacts:
 #  files:
 #    - '**/*'
  
-discard-paths: yes
+
